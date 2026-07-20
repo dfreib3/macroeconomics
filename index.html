@@ -26,11 +26,15 @@
         iframe { width: 100%; height: 500px; border: 2px solid #e1e4e8; border-radius: 6px; margin-bottom: 20px; background-color: #fff; }
         hr { border: 0; border-top: 2px dashed #e1e4e8; margin: 40px 0; }
         
-        /* New Rubric Alignment Styling */
+        /* Rubric Alignment & Table Styling */
         .support-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px; }
         .support-card { background: #fdfefe; border: 1px solid #e1e4e8; padding: 15px; border-radius: 6px; font-size: 0.95em; }
         .support-card h4 { margin: 0 0 8px 0; color: #003366; }
-        .policy-note { font-size: 0.9em; color: #555; margin-top: 10px; padding-top: 10px; border-top: 1px solid #e8e8e8; }
+        .policy-note { font-size: 0.9em; color: #555; margin-top: 15px; padding-top: 15px; border-top: 1px solid #e8e8e8; }
+        
+        .grade-table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.95em; }
+        .grade-table th, .grade-table td { border: 1px solid #e1e4e8; padding: 8px 12px; text-align: left; }
+        .grade-table th { background-color: #f4f7fa; color: #003366; }
     </style>
 </head>
 <body>
@@ -44,18 +48,55 @@
         <p><strong>Modules 2.1 and 2.2:</strong> This 3-day plan moves in order. You will move at your own pace, completing the activities and assessments that follow.</p>
     </div>
 
-    <!-- VISUAL CHECKLIST & POLICIES (Meets Rubric 5.2, 6.2) -->
+    <!-- VISUAL CHECKLIST & SCORING SYSTEM (Meets Rubric 6.2, 6.4) -->
     <div class="section-box" style="border-left-color: #28a745; background-color: #fcfdfd;">
-        <h3>Module Checklist & Expectations</h3>
-        <p>Use this list to track your progress through the module:</p>
-        <ul>
-            <li>Complete Daily Activities</li>
-            <li>Complete Day 1, 2, and 3 Formative Assessments</li>
-            <li>Complete the Summative Assessment</li>
-        </ul>
+        <h3>Module Grading Breakdown & Trackers</h3>
+        <p>Your grade for this module is determined by a <strong>total point system</strong>. The points you earn across all 3 activities and 4 assessments are summed together at the end out of <strong>51 total points possible</strong>[cite: 1].</p>
+        
+        <table class="grade-table">
+            <thead>
+                <tr>
+                    <th>Course Item</th>
+                    <th>Type</th>
+                    <th>Point Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Day 1 Activity</td><td>Learning Activity</td><td>5 Points</td></tr>
+                <tr><td>Day 1 Assessment</td><td>Formative Assessment 1</td><td>5 Points</td></tr>
+                <tr><td>Day 2 Activity</td><td>Learning Activity</td><td>5 Points</td></tr>
+                <tr><td>Day 2 Assessment</td><td>Formative Assessment 2</td><td>14 Points</td></tr>
+                <tr><td>Day 3 Activity</td><td>Learning Activity</td><td>4 Points</td></tr>
+                <tr><td>Day 3 Assessment</td><td>Formative Assessment 3</td><td>4 Points</td></tr>
+                <tr><td>Unit 2 Final Exam</td><td>Summative Assessment</td><td>14 Points</td></tr>
+                <tr style="font-weight: bold; background-color: #f4f7fa;">
+                    <td>Total Module Value</td>
+                    <td>-</td>
+                    <td>51 Points</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 style="margin: 20px 0 5px 0; color: #003366;">Grading Scale (Based on Total Points Earned):</h4>
+        <table class="grade-table" style="max-width: 400px;">
+            <thead>
+                <tr>
+                    <th>Percentage Score</th>
+                    <th>Letter Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>90% and above</td><td>A</td></tr>
+                <tr><td>80% - 89%</td><td>B</td></tr>
+                <tr><td>70% - 79%</td><td>C</td></tr>
+                <tr><td>60% - 69%</td><td>D</td></tr>
+                <tr><td>Below 60%</td><td>F</td></tr>
+            </tbody>
+        </table>
+
         <div class="policy-note">
-            🎯 <strong>Scoring Policy (Standard 6.2):</strong> Daily Activities are graded on completion and participation. Formative Assessments are scored out of 100 points based on accuracy to help track your path to mastery.<br>
-            🔒 <strong>Privacy Statement (Standard 5.2):</strong> To ensure complete student data confidentiality, no personal identifiers are collected. Students log into learning windows using anonymous guest nicknames.
+            🎯 <strong>Scoring Policy (Standard 6.2):</strong> All components contribute directly to your cumulative score[cite: 1]. Progress updates and cumulative item feedback are continually visible within your learning portal framework[cite: 1].<br>
+            🔒 <strong>Privacy Statement (Standard 5.2):</strong> To ensure complete student data confidentiality, no personal identifiers are collected[cite: 1]. Students log into learning windows using anonymous guest nicknames[cite: 1].
         </div>
     </div>
 
@@ -65,11 +106,11 @@
         <div class="support-grid">
             <div class="support-card">
                 <h4>Required Technical Skills (Standard 5.1)</h4>
-                You will need basic web navigation abilities, experience scrolling web layouts, text-entry proficiency for questions, and the ability to interact with embedded application frames.
+                You will need basic web navigation abilities, experience scrolling web layouts, text-entry proficiency for questions, and the ability to interact with embedded application frames[cite: 1].
             </div>
             <div class="support-card">
                 <h4>Academic & Tech Support (Standard 4.6)</h4>
-                If an interactive frame fails to display or load correctly, refresh your web browser. For immediate subject matter help or system errors, contact your classroom instructor via the class portal dashboard.
+                If an interactive frame fails to display or load correctly, refresh your web browser. For immediate subject matter help or system errors, contact your classroom instructor via the class portal dashboard[cite: 1].
             </div>
         </div>
     </div>
@@ -108,7 +149,7 @@
         </div>
     </div>
 
-    <h2>Day 1 Activity: Video Checkpoint Lesson</h2>
+    <h2>Day 1 Activity: Video Checkpoint Lesson (5 Points)</h2>
     <p>Watch the video lesson below. It will automatically pause at key points to test your understanding of the markets before you move into the drawing phase.</p>
     
     <div class="instruction-box">
@@ -121,7 +162,7 @@
     </div>
     <iframe src="https://app.formative.com/join"></iframe>
 
-    <h2>Day 1 Assessment: Circular Flow Drawing Task</h2>
+    <h2>Day 1 Assessment: Circular Flow Drawing Task (FA1 - 5 Points)</h2>
     <p>Complete your short-answer analysis and map out the transaction loops using the built-in drawing canvas inside the portal below.</p>
     
     <div class="instruction-box">
@@ -181,7 +222,7 @@
         </div>
     </div>
 
-    <h2>Day 2 Activity: Video Lecture & Checkpoint Questions</h2>
+    <h2>Day 2 Activity: Video Lecture & Checkpoint Questions (5 Points)</h2>
     <p>Open the interactive player below. You will watch a short video breaking down how these components fit together. The video will pause automatically at key checkpoints to review Day 1 concepts and test your new knowledge on GDP expenditures.</p>
     
     <div class="instruction-box">
@@ -194,7 +235,7 @@
     </div>
     <iframe src="https://app.formative.com/join"></iframe>
 
-    <h2>Day 2 Assessment: News Analysis & Matching Challenge</h2>
+    <h2>Day 2 Assessment: News Analysis & Matching Challenge (FA2 - 14 Points)</h2>
     <p>Time to show what you know. First, you will read a short news brief about a fictional country's quarterly economic performance to calculate their final GDP and spot common traps. Second, you will face a 12-item matching challenge where you must drop real-life transactions into their proper formula buckets (C, I, G, or NX).</p>
     
     <div class="instruction-box">
@@ -246,7 +287,7 @@
         </div>
     </div>
 
-    <h2>Day 3 Activity: Video Lecture Checkpoints</h2>
+    <h2>Day 3 Activity: Video Lecture Checkpoints (4 Points)</h2>
     <p>Open the interactive video check below. Watch the video clip outlining what GDP leaves out. The video player will pause automatically at key structural moments to test your understanding using checkpoints built around real-world data points.</p>
     
     <div class="instruction-box">
@@ -259,7 +300,7 @@
     </div>
     <iframe src="https://app.formative.com/join"></iframe>
 
-    <h2>Day 3 Assessment: Counted or Excluded Speed Round</h2>
+    <h2>Day 3 Assessment: Counted or Excluded Speed Round (FA3 - 4 Points)</h2>
     <p>Review the random real-world scenarios in the rapid assignment module below. Classify each case based on whether standard GDP metrics successfully count the activity or completely exclude it from calculation.</p>
     
     <div class="instruction-box">
@@ -268,6 +309,28 @@
             <li>In the box below, type your Day 3 Assessment code: <strong class="code-highlight">38VFF9</strong> and click <strong>Continue</strong>.</li>
             <li>On the next screen, click <strong>Join as a Guest</strong>.</li>
             <li>Enter an anonymous nickname and click <strong>Join</strong> to begin.</li>
+        </ol>
+    </div>
+    <iframe src="https://app.formative.com/join"></iframe>
+
+    <hr>
+
+    <!-- ================= UNIT 2 SUMMATIVE ASSESSMENT ================= -->
+    <h2>🏆 Unit 2 Summative Assessment (14 Points)</h2>
+    
+    <div class="objective-box" style="border-left-color: #003366;">
+        <strong>🎯 Unit Mastery Objective (Standard 6.1):</strong> Demonstrate mastery over aggregate output calculations, circular tracking components, and fundamental diagnostic limitations of national economic indicators[cite: 1].
+    </div>
+
+    <h3>Final Performance Exam Overview</h3>
+    <p>You have made it to the final capstone assessment for Unit 2! This exam consists of a <strong>10-question multiple-choice section</strong> covering structural transaction placements and GDP exceptions, followed by <strong>1 Free Response Question (FRQ)</strong> requiring formula manipulation and analytical evaluation of expenditures ($GDP = C + I + G + NX$). Ensure you double-check your mathematical calculations and state formula iterations where requested[cite: 1].</p>
+
+    <div class="instruction-box">
+        <h3>📋 How to Log In & Access the Final Exam:</h3>
+        <ol>
+            <li>In the portal window below, type your final examination code: <strong class="code-highlight">HDBUCW</strong> and click <strong>Continue</strong>.</li>
+            <li>On the next validation screen, click <strong>Join as a Guest</strong>.</li>
+            <li>Enter an anonymous guest nickname (for example: <em>FinalStudent2</em>) and click <strong>Join</strong> to unlock your exam sheet.</li>
         </ol>
     </div>
     <iframe src="https://app.formative.com/join"></iframe>
