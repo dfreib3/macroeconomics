@@ -3,187 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Macroeconomics Unit 2 Portal</title>
+    <title>AP Macroeconomics: Unit 2 Hub</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #1e293b;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 2px solid #38bdf8;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #334155;
-            padding: 10px;
-        }
-        nav button {
-            background-color: transparent;
-            color: #f8fafc;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        nav button:hover, nav button.active {
-            background-color: #38bdf8;
-            color: #0f172a;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
-            background-color: #1e293b;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-        .section {
-            display: none;
-        }
-        .section.active {
-            display: block;
-        }
-        h1, h2 {
-            color: #38bdf8;
-        }
-        .vocab-box {
-            background-color: #334155;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            border-left: 5px solid #38bdf8;
-        }
-        .vocab-item {
-            margin-bottom: 10px;
-        }
-        .vocab-item strong {
-            color: #38bdf8;
-        }
-        .iframe-container {
-            position: relative;
-            width: 100%;
-            height: 600px;
-            margin-top: 20px;
-            border-radius: 8px;
-            overflow: hidden;
-            border: 2px solid #38bdf8;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; background-color: #fafbfc; }
+        h1 { color: #003366; border-bottom: 3px solid #003366; padding-bottom: 12px; font-size: 2.2em; margin-bottom: 30px; }
+        h2 { color: #004080; margin-top: 40px; font-size: 1.6em; border-bottom: 1px solid #e1e4e8; padding-bottom: 5px; }
+        h3 { color: #0056b3; margin-top: 0; }
+        p { color: #444; font-size: 1.1em; }
+        ul { font-size: 1.1em; color: #444; }
+        .section-box { background: #ffffff; border: 1px solid #e1e4e8; border-left: 5px solid #003366; padding: 25px; margin: 25px 0; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
+        .objective-box { background-color: #f4f7fa; border-left: 5px solid #0056b3; padding: 15px; margin: 15px 0; border-radius: 4px; }
+        .instruction-box { background-color: #f8f9fa; border: 1px solid #e1e4e8; padding: 15px 20px; border-radius: 6px; margin-bottom: 15px; }
+        .instruction-box ol { margin: 10px 0 0 20px; padding: 0; color: #555; }
+        .instruction-box li { margin-bottom: 5px; }
+        .news-flash { background-color: #fff3cd; border: 1px solid #ffeeba; border-left: 5px solid #ffc107; padding: 15px; border-radius: 4px; margin: 20px 0; font-family: Georgia, serif; }
+        .news-title { font-size: 1.3em; font-weight: bold; color: #856404; line-height: 1.3; }
+        .vocab-grid { display: grid; grid-template-columns: 1fr; gap: 15px; margin-top: 15px; }
+        .vocab-item { background: #f1f4f8; padding: 15px; border-radius: 4px; border-left: 3px solid #0056b3; }
+        .vocab-item strong { color: #003366; font-size: 1.1em; }
+        .vocab-example { display: block; margin-top: 5px; font-style: italic; color: #555; font-size: 0.95em; }
+        .code-highlight { color: #dc3545; font-family: monospace; font-size: 1.2em; background: #fff; padding: 2px 6px; border: 1px solid #e1e4e8; border-radius: 4px; }
+        iframe { width: 100%; height: 500px; border: 2px solid #e1e4e8; border-radius: 6px; margin-bottom: 20px; background-color: #fff; }
+        hr { border: 0; border-top: 2px dashed #e1e4e8; margin: 40px 0; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Macroeconomics Unit 2: Economic Indicators & the Business Cycle</h1>
-        <p>Welcome to your learning portal. Select a day below to access your vocabulary and interactive assignments.</p>
-    </header>
+    <h1>Unit 2: Measuring Economic Performance</h1>
 
-    <nav>
-        <button id="btn-day1" class="active" onclick="showTab('day1')">Day 1: Circular Flow</button>
-        <button id="btn-day2" onclick="showTab('day2')">Day 2: Components of GDP</button>
-        <button id="btn-day3" onclick="showTab('day3')">Day 3: Limitations of GDP</button>
-    </nav>
-
-    <div class="container">
-
-        <!-- DAY 1: CIRCULAR FLOW -->
-        <div id="day1" class="section active">
-            <h2>Day 1: The Circular Flow Model</h2>
-            <p><strong>Learning Objective:</strong> Define macroeconomic performance metrics and visualize how resources, goods, and money move dynamically between households, businesses, and markets within the Circular Flow Model.</p>
-            
-            <div class="vocab-box">
-                <h3>Key Vocabulary</h3>
-                <div class="vocab-item"><strong>Macroeconomics:</strong> The study of the entire economy as a single system, tracking large-scale metrics like total output, inflation, and unemployment.</div>
-                <div class="vocab-item"><strong>Product Market:</strong> The arena where finished goods and services are bought by households and sold by businesses.</div>
-                <div class="vocab-item"><strong>Resource Market:</strong> The arena where businesses purchase the productive factors (labor, land, capital) provided by households.</div>
-            </div>
-
-            <h3>Day 1 Activity: Guided Modeling</h3>
-            <div class="iframe-container">
-                <iframe src="https://goformative.com/join?code=EGRAEC"></iframe>
-            </div>
-
-            <h3>Day 1 Assessment: Checkpoint Challenge</h3>
-            <div class="iframe-container">
-                <iframe src="https://goformative.com/join?code=QLJBXG"></iframe>
-            </div>
-        </div>
-
-        <!-- DAY 2: COMPONENTS OF GDP -->
-        <div id="day2" class="section">
-            <h2>Day 2: Components of GDP</h2>
-            <p><strong>Learning Objective:</strong> Calculate national economic output using the expenditures approach formula (GDP = C + I + G + NX) and accurately classify transactions into their respective spending categories.</p>
-            
-            <div class="vocab-box">
-                <h3>Key Vocabulary</h3>
-                <div class="vocab-item"><strong>Expenditure Approach:</strong> The macroeconomic method that calculates GDP by adding together all spending on final goods and services (GDP = C + I + G + NX).</div>
-                <div class="vocab-item"><strong>Investment Spending (I):</strong> Corporate spending on physical capital assets, machinery, new housing construction, and changes to factory inventories. (Not stocks/bonds!)</div>
-                <div class="vocab-item"><strong>Net Exports (NX):</strong> The value of a nation's exports minus the value of its imports (Exports - Imports).</div>
-            </div>
-
-            <h3>Day 2 Activity: Expenditure Categorization</h3>
-            <div class="iframe-container">
-                <iframe src="https://goformative.com/join?code=PXZWVS"></iframe>
-            </div>
-
-            <h3>Day 2 Assessment: Calculation Matrix</h3>
-            <div class="iframe-container">
-                <iframe src="https://goformative.com/join?code=JEVEDW"></iframe>
-            </div>
-        </div>
-
-        <!-- DAY 3: LIMITATIONS OF GDP -->
-        <div id="day3" class="section">
-            <h2>Day 3: Limitations of GDP</h2>
-            <p><strong>Learning Objective:</strong> Evaluate the limitations of Gross Domestic Product (GDP) as a measure of economic well-being by identifying valuable economic activities and societal costs that standard GDP calculations fail to capture.</p>
-            
-            <div class="vocab-box">
-                <h3>Key Vocabulary</h3>
-                <div class="vocab-item"><strong>Capita:</strong> Per person or per head. Dividing a country's total GDP by its population gives you "GDP per capita," showing the average output per person.</div>
-                <div class="vocab-item"><strong>Nonmarket Activities:</strong> Work, services, or production done privately at home rather than through commercial businesses (e.g., cooking dinner or cleaning your own house) which GDP misses entirely.</div>
-                <div class="vocab-item"><strong>Informal/Shadow Economy:</strong> Transactions kept completely off the books or paid under the table in cash to avoid tracking and taxes.</div>
-                <div class="vocab-item"><strong>Externalities:</strong> Unintended side effects or societal costs—like pollution or health damages—that are ignored by standard GDP production tallies.</div>
-            </div>
-
-            <h3>Day 3 Activity: Video Lecture Checkpoints</h3>
-            <div class="iframe-container">
-                <iframe src="https://goformative.com/join?code=HVZPBD"></iframe>
-            </div>
-
-            <h3>Day 3 Assessment: Counted or Excluded Speed Round</h3>
-            <div class="iframe-container">
-                <iframe src="https://goformative.com/join?code=38VFF9"></iframe>
-            </div>
-        </div>
-
+    <!-- MAIN INTRODUCTION -->
+    <div class="section-box">
+        <h3>Welcome to Unit 2!</h3>
+        <p>In Unit 1, we looked at the basics of economics—how choices, trade-offs, and scarcity shape our world. Now, we are shifting gears to look at the big picture! Unit 2 is all about how we track and measure the health of an entire country's economy. Think of it like a massive economic report card. This module is going to set the stage for everything else we learn in this unit.</p>
+        <p><strong>Modules 2.1 and 2.2:</strong> This 3-day plan moves in order. You will move at your own pace, completing the activities and assessments that follow.</p>
     </div>
 
-    <script>
-        function showTab(tabId) {
-            // Hide all sections
-            document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
-            // Remove active class from all buttons
-            document.querySelectorAll('nav button').forEach(btn => btn.classList.remove('active'));
-            
-            // Show current section and highlight button
-            document.getElementById(tabId).classList.add('active');
-            document.getElementById('btn-' + tabId).classList.add('active');
-        }
-    </script>
+    <!-- VISUAL CHECKLIST -->
+    <div class="section-box" style="border-left-color: #28a745; background-color: #fcfdfd;">
+        <h3>Module Checklist</h3>
+        <p>Use this list to track your progress through the module:</p>
+        <ul>
+            <li>Complete Daily Activities</li>
+            <li>Complete Day 1, 2, and 3 Formative Assessments</li>
+            <li>Complete the Summative Assessment</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!-- ================= DAY 1 ================= -->
+    <h2>Day 1: The Circular Flow Model</h2>
+    
+    <div class="objective-box">
+        <strong>🎯 Learning Objective:</strong> Identify the basic economic actors and resource pathways within a market economy by mapping out the physical and monetary cycles of the Circular Flow model.
+    </div>
+
+    <h3>Intro: Connecting the Dots</h3>
+    <p>We kick off Unit 2 by mapping out how money and resources move through an economy. Before we can start measuring a country's total wealth, we need to understand the fundamental pipelines where trading takes place. Today, you will dive into the circular loops that link everyday citizens to massive corporations, followed by a hands-on drawing challenge to lock in the material.</p>
+
+    <h3>📚 Day 1 Vocabulary Panel</h3>
+    <p>Before launching your tasks, review these key terms you will encounter in today's activities:</p>
+    
+    <div class="vocab-grid">
+        <div class="vocab-item">
+            <strong>Households:</strong> Individuals or groups living together who own resources and buy finished goods.
+            <span class="vocab-example"><em>Real-Life Example:</em> Your family, who supplies labor to employers and buys gas from a local station.</span>
+        </div>
+        <div class="vocab-item">
+            <strong>Businesses:</strong> Commercial firms that purchase resources in order to produce and sell finished goods.
+            <span class="vocab-example"><em>Real-Life Example:</em> A tech company hiring software designers and manufacturing smartphones to sell.</span>
+        </div>
+        <div class="vocab-item">
+            <strong>Product Market:</strong> The conceptual place where businesses sell finished goods and services directly to consumers.
+            <span class="vocab-example"><em>Real-Life Example:</em> You walking into a grocery store to buy a carton of milk or ordering shoes online.</span>
+        </div>
+        <div class="vocab-item">
+            <strong>Resource Market:</strong> The conceptual place where households sell their raw materials, capital, and labor to businesses.
+            <span class="vocab-example"><em>Real-Life Example:</em> An adult applying for a job at a factory or a landowner renting retail space to a coffee shop.</span>
+        </div>
+    </div>
+
+    <h2>Day 1 Activity: Video Checkpoint Lesson</h2>
+    <p>Watch the video lesson below. It will automatically pause at key points to test your understanding of the markets before you move into the drawing phase.</p>
+    
+    <div class="instruction-box">
+        <h3>📋 How to Log In & Access:</h3>
+        <ol>
+            <li>In the box below, type this 6-digit code: <strong class="code-highlight">9YCZLA</strong> and click <strong>Continue</strong>.</li>
+            <li>On the next screen, click <strong>Join as a Guest</strong>.</li>
+            <li>Enter an anonymous nickname (for example: <em>EcoStudent1</em>) and click <strong>Join</strong> to begin the video.</li>
+        </ol>
+    </div>
+    <iframe src="https://app.formative.com/join"></iframe>
+
+    <h2>Day 1 Assessment: Circular Flow Drawing Task</h2>
+    <p>Complete your short-answer analysis and map out the transaction loops using the built-in drawing canvas inside the portal below.</p>
+    
+    <div class="instruction-box">
+        <h3>📋 How to Log In & Access:</h3>
+        <ol>
+            <li>In the box below, type this 6-digit code: <strong class="code-highlight">GYS5S2</strong> and click <strong>Continue</strong>.</li>
+            <li>On the next screen, click <strong>Join as a Guest</strong>.</li>
+            <li>Enter an anonymous nickname (for example: <em>EcoStudent1</em>) and click <strong>Join</strong> to begin your task.</li>
+        </ol>
+    </div>
+    <iframe src="https://app.formative.com/join"></iframe>
+
+    <hr>
+
+    <!-- ================= DAY 2 ================= -->
+    <h2>Day 2: Calculating GDP via Expenditures</h2>
+    
+    <div class="objective-box">
+        <strong>🎯 Learning Objective:</strong> Correctly calculate a nation's total output by categorizing real-world economic transactions into the four components of the Expenditure Approach formula (GDP = C + I + G + NX).
+    </div>
+
+    <h3>Intro: Connecting the Dots</h3>
+    <p>Now we move onto Day 2! We start with a quick review of our Day 1 material to make sure our circular flow foundations are strong. Then, we will dive right into the main lecture and video questions for Day 2. Once this is complete, you will move into the assessment portion, where you will analyze a real-world news article and tackle a scenario-matching challenge.</p>
+
+    <div class="news-flash">
+        <div class="news-title">📰 ECONOMY FLASH: Consumer Spending Surges as Tech Sales Skyrocket; Experts Project Record GDP Growth This Quarter</div>
+        <p style="margin: 5px 0 0 0; font-size: 0.95em; color: #666; font-style: italic;">Why does this matter? When you buy a laptop or a sandwich, you aren't just shopping—you are actively moving a massive national economic engine that world leaders watch daily.</p>
+    </div>
+
+    <h3>📚 Day 2 Vocabulary Panel</h3>
+    <p>Before launching your tasks, review these specific terms you will encounter in today's activities:</p>
+    
+    <div class="vocab-grid">
+        <div class="vocab-item">
+            <strong>Expenditure:</strong> An amount of money spent on something; a payment or purchase.
+            <span class="vocab-example"><em>Real-Life Example:</em> When you buy lunch or a business pays for a new machine, that spending is an expenditure.</span>
+        </div>
+        <div class="vocab-item">
+            <strong>Consumption:</strong> The act of buying and using up goods and services to satisfy personal wants.
+            <span class="vocab-example"><em>Real-Life Example:</em> Buying a burrito or a movie ticket is consumer consumption—it's purchased for immediate personal use.</span>
+        </div>
+        <div class="vocab-item">
+            <strong>Inventory:</strong> A complete list or supply of goods, materials, or products currently kept in stock by a business.
+            <span class="vocab-example"><em>Real-Life Example:</em> A shoe store keeping 200 pairs of sneakers in the back room that haven't been sold yet.</span>
+        </div>
+        <div class="vocab-item">
+            <strong>Investment:</strong> In macroeconomics, this refers strictly to business spending on physical assets to help them produce future goods, or additions to inventory. (It does NOT mean buying stocks or bonds!)
+            <span class="vocab-example"><em>Real-Life Example:</em> A local bakery buying a brand-new commercial oven to bake more bread.</span>
+        </div>
+        <div class="vocab-item">
+            <strong>Exports:</strong> Goods and services that are produced inside one country and sold to buyers living in a completely different country.
+            <span class="vocab-example"><em>Real-Life Example:</em> A United States dairy farm shipping Wisconsin cheese to a grocery store chain in France.</span>
+        </div>
+        <div class="vocab-item">
+            <strong>Imports:</strong> Goods and services that are produced in a foreign nation and bought by consumers over here.
+            <span class="vocab-example"><em>Real-Life Example:</em> An American car dealership buying sedans manufactured at a factory located in Japan.</span>
+        </div>
+    </div>
+
+    <h2>Day 2 Activity: Video Lecture & Checkpoint Questions</h2>
+    <p>Open the interactive player below. You will watch a short video breaking down how these components fit together. The video will pause automatically at key checkpoints to review Day 1 concepts and test your new knowledge on GDP expenditures.</p>
+    
+    <div class="instruction-box">
+        <h3>📋 How to Log In & Access:</h3>
+        <ol>
+            <li>In the box below, type your Day 2 Activity code: <strong class="code-highlight">6XWCSN</strong> and click <strong>Continue</strong>.</li>
+            <li>On the next screen, click <strong>Join as a Guest</strong>.</li>
+            <li>Enter an anonymous nickname (for example: <em>EcoStudent2</em>) and click <strong>Join</strong> to begin.</li>
+        </ol>
+    </div>
+    <iframe src="https://app.formative.com/join"></iframe>
+
+    <h2>Day 2 Assessment: News Analysis & Matching Challenge</h2>
+    <p>Time to show what you know. First, you will read a short news brief about a fictional country's quarterly economic performance to calculate their final GDP and spot common traps. Second, you will face a 12-item matching challenge where you must drop real-life transactions into their proper formula buckets (C, I, G, or NX).</p>
+    
+    <div class="instruction-box">
+        <h3>📋 How to Log In & Access:</h3>
+        <ol>
+            <li>In the box below, type your Day 2 Assessment code: <strong class="code-highlight">QM6D8H</strong> and click <strong>Continue</strong>.</li>
+            <li>On the next screen, click <strong>Join as a Guest</strong>.</li>
+            <li>Enter an anonymous nickname and click <strong>Join</strong> to begin.</li>
+        </ol>
+    </div>
+    <iframe src="https://app.formative.com/join"></iframe>
+
+    <hr>
+
+    <!-- ================= DAY 3 ================= -->
+    <h2>Day 3: Limitations of GDP</h2>
+    
+    <div class="objective-box">
+        <strong>🎯 Learning Objective:</strong> Evaluate the limitations of Gross Domestic Product (GDP) as a measure of economic well-being by identifying valuable economic activities and societal costs that standard GDP calculations fail to capture.
+    </div>
+
+    <h3>Intro: Connecting the Dots</h3>
+    <p>Welcome to Day 3! Over the last two days, we learned how to calculate everything that a country produces using the expenditure formula (GDP = C + I + G + NX). It seems like a perfect way to score a country's success—the higher the number, the better the country, right? Not quite. Today, we look at the blind spots. GDP is a fantastic calculator for market transactions, but it is an incomplete tape measure for human well-being. A country could have a massive, skyrocketing GDP while its citizens suffer from severe pollution, extreme poverty, or exhausting work hours. Today, we discover exactly what GDP leaves out and why a high GDP doesn't always equal a high quality of life.</p>
+
+    <div class="news-flash">
+        <div class="news-title">📰 ECONOMY FLASH: Factory Production Hits All-Time High; Local River Quality Drops to Historic Lows</div>
+        <p style="margin: 5px 0 0 0; font-size: 0.95em; color: #666; font-style: italic;">Why does this matter? GDP counts the dollar value of every single widget the factory produces, but it completely ignores the toxic sludge dumped into the town's water supply.</p>
+    </div>
+
+    <h3>📚 Day 3 Vocabulary Panel</h3>
+    <p>Before launching your tasks, review these specific terms you will encounter in today's activities:</p>
+    
+    <div class="vocab-grid">
+        <div class="vocab-item">
+            <strong>Capita:</strong> Per person or per head. Dividing a country's total GDP by its population gives you "GDP per capita," showing the average output per person.
+            <span class="vocab-example"><em>Real-Life Example:</em> If a small island has a total GDP of $1,000,000 and a population of 100 people, its GDP per capita is $10,000 per person.</span>
+        </div>
+        <div class="vocab-item">
+            <strong>Nonmarket Activities:</strong> Work, services, or production done privately at home rather than through commercial businesses (e.g., cooking dinner or cleaning your own house) which GDP misses entirely.
+            <span class="vocab-example"><em>Real-Life Example:</em> Cleaning your own bedroom or changing the oil in your own car rather than paying a shop to do it.</span>
+        </div>
+        <div class="vocab-item">
+            <strong>Informal/Shadow Economy:</strong> Transactions kept completely off the books or paid under the table in cash to avoid tracking and taxes.
+            <span class="vocab-example"><em>Real-Life Example:</em> Paying a neighbor $50 cash under the table to help you move a heavy couch.</span>
+        </div>
+        <div class="vocab-item">
+            <strong>Externalities:</strong> Unintended side effects or societal costs—like pollution or health damages—that are ignored by standard GDP production tallies.
+            <span class="vocab-example"><em>Real-Life Example:</em> A steel factory producing millions of dollars of goods while releasing thick smog that creates local healthcare costs.</span>
+        </div>
+    </div>
+
+    <h2>Day 3 Activity: Video Lecture Checkpoints</h2>
+    <p>Open the interactive video check below. Watch the video clip outlining what GDP leaves out. The video player will pause automatically at key structural moments to test your understanding using checkpoints built around real-world data points.</p>
+    
+    <div class="instruction-box">
+        <h3>📋 How to Log In & Access:</h3>
+        <ol>
+            <li>In the box below, type your Day 3 Activity code: <strong class="code-highlight">HVZPBD</strong> and click <strong>Continue</strong>.</li>
+            <li>On the next screen, click <strong>Join as a Guest</strong>.</li>
+            <li>Enter an anonymous nickname (for example: <em>EcoStudent3</em>) and click <strong>Join</strong> to begin.</li>
+        </ol>
+    </div>
+    <iframe src="https://app.formative.com/join"></iframe>
+
+    <h2>Day 3 Assessment: Counted or Excluded Speed Round</h2>
+    <p>Review the random real-world scenarios in the rapid assignment module below. Classify each case based on whether standard GDP metrics successfully count the activity or completely exclude it from calculation.</p>
+    
+    <div class="instruction-box">
+        <h3>📋 How to Log In & Access:</h3>
+        <ol>
+            <li>In the box below, type your Day 3 Assessment code: <strong class="code-highlight">38VFF9</strong> and click <strong>Continue</strong>.</li>
+            <li>On the next screen, click <strong>Join as a Guest</strong>.</li>
+            <li>Enter an anonymous nickname and click <strong>Join</strong> to begin.</li>
+        </ol>
+    </div>
+    <iframe src="https://app.formative.com/join"></iframe>
 
 </body>
 </html>
